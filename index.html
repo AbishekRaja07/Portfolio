@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Abishek R | Electronics & Communication Engineering Student portfolio featuring projects, skills, and achievements."
+    />
+    <meta
+      name="keywords"
+      content="Abishek R, ECE, Electronics and Communication Engineering, PCB design, embedded systems, portfolio"
+    />
+    <meta name="author" content="Abishek R" />
+    <meta property="og:title" content="Abishek R | ECE Portfolio" />
+    <meta
+      property="og:description"
+      content="Modern portfolio of Abishek R, Electronics & Communication Engineering student."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-preview.svg" />
+    <meta property="og:url" content="https://example.github.io" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Abishek R | ECE Portfolio</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-dark">
+    <div class="loader" id="loader">
+      <div class="loader-ring"></div>
+      <p>Crafting the portfolio...</p>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <canvas class="particles" id="particles"></canvas>
+
+    <header class="header" id="top">
+      <nav class="nav container">
+        <a class="logo" href="#top">Abishek <span>R</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-toggle-icon">☀</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-content">
+          <p class="eyebrow" data-animate>Electronics & Communication Engineering</p>
+          <h1 data-animate>
+            Abishek <span>R</span>
+          </h1>
+          <h2 class="typing" data-animate>
+            <span id="typingText"></span>
+          </h2>
+          <p class="hero-tagline" data-animate>
+            Designing Intelligent Electronic Systems for the Future
+          </p>
+          <div class="hero-actions" data-animate>
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="assets/Abishek_R_Resume.pdf" download>Download Resume</a>
+            <a class="btn outline" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-stats" data-animate>
+            <div>
+              <h3 class="counter" data-target="6">0</h3>
+              <p>Core Skills</p>
+            </div>
+            <div>
+              <h3 class="counter" data-target="3">0</h3>
+              <p>Projects</p>
+            </div>
+            <div>
+              <h3 class="counter" data-target="1">0</h3>
+              <p>Paper Published</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" data-animate>
+          <img src="assets/images/avatar.png" alt="Abishek R illustration" loading="lazy" />
+          <div class="glass-card">
+            <h4>ECE Focus</h4>
+            <p>PCB Design · Embedded Systems · Digital Electronics</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about container" id="about">
+        <div class="section-heading" data-animate>
+          <p>About</p>
+          <h2>Driven by electronics, powered by curiosity.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-summary" data-animate>
+            <p>
+              To pursue a career as an Electronics Engineer in a dynamic organization where I can
+              utilize my ECE background to design, test, and optimize printed circuit boards for
+              real-world applications. I aim to enhance product performance through meticulous
+              design practices, teamwork, and continuous learning in emerging electronic
+              technologies.
+            </p>
+            <div class="quick-facts">
+              <div>
+                <h4>Location</h4>
+                <p>Karur, Tamil Nadu</p>
+              </div>
+              <div>
+                <h4>Focus</h4>
+                <p>PCB Design & Embedded Systems</p>
+              </div>
+              <div>
+                <h4>CGPA</h4>
+                <p>7.47</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-cards">
+            <div class="info-card" data-animate>
+              <h3>Experience</h3>
+              <p>Hands-on PCB design, prototyping, and IoT experimentation.</p>
+            </div>
+            <div class="info-card" data-animate>
+              <h3>Education</h3>
+              <p>M Kumarasamy College of Engineering, 2023 - Present.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education" id="education">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <p>Education</p>
+            <h2>Learning timeline</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item" data-animate>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>M Kumarasamy College of Engineering</h3>
+                <p>Bachelor of Electronics and Communication Engineering</p>
+                <span>2023 - Present · CGPA 7.47</span>
+              </div>
+            </div>
+            <div class="timeline-item" data-animate>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Karur Saraswathi Vidhyalaya Higher Secondary School</h3>
+                <p>Higher Secondary Education</p>
+                <span>2021 - 2023 · 86.58%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills container" id="skills">
+        <div class="section-heading" data-animate>
+          <p>Skills</p>
+          <h2>Toolbox built for modern electronics.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card" data-animate>
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>PCB Design</span>
+              <div class="progress"><div style="width: 88%"></div></div>
+            </div>
+            <div class="skill">
+              <span>Embedded Systems</span>
+              <div class="progress"><div style="width: 82%"></div></div>
+            </div>
+            <div class="skill">
+              <span>Digital Electronics</span>
+              <div class="progress"><div style="width: 80%"></div></div>
+            </div>
+          </div>
+          <div class="skill-card" data-animate>
+            <h3>Tools</h3>
+            <div class="skill">
+              <span>Altium Designer</span>
+              <div class="progress"><div style="width: 85%"></div></div>
+            </div>
+            <div class="skill">
+              <span>EDA Tools</span>
+              <div class="progress"><div style="width: 78%"></div></div>
+            </div>
+          </div>
+          <div class="skill-card" data-animate>
+            <h3>Programming</h3>
+            <div class="skill">
+              <span>Java</span>
+              <div class="progress"><div style="width: 74%"></div></div>
+            </div>
+          </div>
+          <div class="skill-card" data-animate>
+            <h3>Soft Skills</h3>
+            <div class="skill">
+              <span>Team Work</span>
+              <div class="progress"><div style="width: 90%"></div></div>
+            </div>
+            <div class="skill">
+              <span>Emotional Intelligence</span>
+              <div class="progress"><div style="width: 86%"></div></div>
+            </div>
+            <div class="skill">
+              <span>Active Listening</span>
+              <div class="progress"><div style="width: 84%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-counters" data-animate>
+          <div>
+            <h4 class="counter" data-target="12">0</h4>
+            <p>Hands-on Tools</p>
+          </div>
+          <div>
+            <h4 class="counter" data-target="20">0</h4>
+            <p>Lab Hours / Week</p>
+          </div>
+          <div>
+            <h4 class="counter" data-target="5">0</h4>
+            <p>Core Domains</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests" id="interests">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <p>Areas of Interest</p>
+            <h2>Where I love to explore.</h2>
+          </div>
+          <div class="interest-grid">
+            <div class="interest-card" data-animate>
+              <h3>Digital Electronics</h3>
+              <p>Designing robust logic systems and digital architectures.</p>
+            </div>
+            <div class="interest-card" data-animate>
+              <h3>Embedded Systems</h3>
+              <p>Building intelligent devices that connect hardware and software.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects container" id="projects">
+        <div class="section-heading" data-animate>
+          <p>Projects</p>
+          <h2>Selected work with measurable impact.</h2>
+        </div>
+        <div class="project-filters" data-animate>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="energy">Energy</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="iot">IoT</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="energy" data-animate>
+            <img src="assets/images/project-1.jpg" alt="Smart regenerative power project" loading="lazy" />
+            <div class="project-content">
+              <h3>Smart Regenerative Power Generation in E-Vehicle</h3>
+              <ul>
+                <li>Captures wind energy</li>
+                <li>Converts to electrical power</li>
+                <li>Enhances battery charging</li>
+                <li>Improves energy efficiency</li>
+              </ul>
+              <div class="tags">
+                <span>Energy</span>
+                <span>PCB</span>
+                <span>Research</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn small" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn small ghost" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-category="software" data-animate>
+            <img src="assets/images/project-2.jpg" alt="Task management system" loading="lazy" />
+            <div class="project-content">
+              <h3>Task Management System</h3>
+              <ul>
+                <li>Create tasks</li>
+                <li>Assign tasks</li>
+                <li>Update tasks</li>
+                <li>Track tasks</li>
+                <li>SQL database integration</li>
+                <li>Java backend</li>
+              </ul>
+              <div class="tags">
+                <span>Java</span>
+                <span>SQL</span>
+                <span>Backend</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn small" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn small ghost" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-category="iot" data-animate>
+            <img src="assets/images/project-3.jpg" alt="Custom PCB design using ESP32" loading="lazy" />
+            <div class="project-content">
+              <h3>Custom PCB Design Using ESP32 for IoT Application</h3>
+              <ul>
+                <li>Custom PCB design</li>
+                <li>ESP32 microcontroller</li>
+                <li>Wi-Fi connectivity</li>
+                <li>Bluetooth connectivity</li>
+                <li>Sensor monitoring</li>
+              </ul>
+              <div class="tags">
+                <span>ESP32</span>
+                <span>IoT</span>
+                <span>PCB</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn small" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn small ghost" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="achievements" id="achievements">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <p>Achievements</p>
+            <h2>Milestones worth highlighting.</h2>
+          </div>
+          <div class="achievement-card" data-animate>
+            <h3>IEEE Conference Paper</h3>
+            <p>
+              Published a conference paper in IEEE titled "Smart Regenerative Power Generation in
+              E-Vehicle".
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="certifications container" id="certifications">
+        <div class="section-heading" data-animate>
+          <p>Certifications</p>
+          <h2>Professional learning highlights.</h2>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card" data-animate>
+            <h3>Fundamentals of Altium Design</h3>
+            <p>Hands-on PCB design workflows and best practices.</p>
+          </div>
+          <div class="cert-card" data-animate>
+            <h3>NPTEL Certification in IoT & Cloud Computing</h3>
+            <p>Connected systems, data pipelines, and cloud integration.</p>
+          </div>
+          <div class="cert-card" data-animate>
+            <h3>College Level Project Expo Participation</h3>
+            <p>Presented innovative electronics projects to industry judges.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="languages" id="languages">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <p>Languages</p>
+            <h2>Communication strength.</h2>
+          </div>
+          <div class="language-badges">
+            <span data-animate>Tamil · Native</span>
+            <span data-animate>English · Professional Proficiency</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact container" id="contact">
+        <div class="section-heading" data-animate>
+          <p>Contact</p>
+          <h2>Let us build something impactful together.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-animate>
+            <div class="contact-item">
+              <h4>Phone</h4>
+              <p>
+                <span id="phone">+91 6374742793</span>
+                <button class="copy-btn" data-copy="phone">Copy</button>
+              </p>
+            </div>
+            <div class="contact-item">
+              <h4>Email</h4>
+              <p>
+                <span id="email">abishekraja451@gmail.com</span>
+                <button class="copy-btn" data-copy="email">Copy</button>
+              </p>
+            </div>
+            <div class="contact-item">
+              <h4>LinkedIn</h4>
+              <p>
+                <a href="https://linkedin.com/in/AbishekRaja07" target="_blank" rel="noreferrer"
+                  >linkedin.com/in/AbishekRaja07</a
+                >
+              </p>
+            </div>
+            <div class="contact-item">
+              <h4>GitHub</h4>
+              <p>
+                <a href="https://github.com/AbhishekRaja07" target="_blank" rel="noreferrer"
+                  >github.com/AbhishekRaja07</a
+                >
+              </p>
+            </div>
+            <div class="contact-item">
+              <h4>Location</h4>
+              <p>Karur, Tamil Nadu, India</p>
+            </div>
+            <div class="socials">
+              <a href="https://linkedin.com/in/AbishekRaja07" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6 1.12 6 0 4.88 0 3.5 0 2.12 1.12 1 2.5 1c1.4 0 2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.6 4.9-2.6 5.2 0 6.2 3.4 6.2 7.9V24h-5v-7.3c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.8-2.8 3.7V24h-5V8z"/></svg>
+              </a>
+              <a href="https://github.com/AbhishekRaja07" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6V20c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.8 1.6.8.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" data-animate>
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="5" placeholder="Tell me about your idea" required></textarea>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="form-note">Form submissions are not configured yet.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Abishek R. All Rights Reserved.</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
