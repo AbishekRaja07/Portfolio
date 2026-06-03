@@ -759,3 +759,97 @@ body.theme-light .contact-form {
     display: none;
   }
 }
+
+@media (max-width: 640px) {
+  .nav {
+    gap: 12px;
+  }
+
+  .nav-links {
+    right: 12px;
+    left: 12px;
+    width: calc(100% - 24px);
+  }
+
+  .hero {
+    min-height: auto;
+    gap: 32px;
+    padding: 56px 0 40px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .skills-grid,
+  .project-grid,
+  .cert-grid,
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 28px 1fr;
+  }
+
+  .timeline-dot {
+    left: 6px;
+  }
+
+  .contact-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(1200px, 90vw);
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+  }
+
+  .typing {
+    min-height: 40px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .project-content ul {
+    padding-left: 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+  }
+}
